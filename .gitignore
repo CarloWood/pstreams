@@ -7,3 +7,4 @@ ChangeLog
 pstreams-?.?.?/
 pstreams-?.?.?.tar.gz
 pstreams-docs-?.?.?.tar.gz
+Makefile.in
