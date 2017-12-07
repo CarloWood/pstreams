@@ -823,8 +823,8 @@ int main()
         class pguard
         {
         public:
-            explicit pguard(ipstream& in, int signal=SIGKILL)
-            : buf_(*in.rdbuf()), signal_(signal) { }
+            explicit pguard(ipstream& in2, int signal=SIGKILL)
+            : buf_(*in2.rdbuf()), signal_(signal) { }
 
             ~pguard() { if (signal_) buf_.kill(signal_); }
 
